@@ -1,6 +1,6 @@
 
 
-import 'package:app_projeto/favoritos_view.dart';
+import 'package:app_projeto/view/favoritos_view.dart';
 import 'package:app_projeto/view/cadastro_usuario_view.dart';
 import 'package:app_projeto/view/detalhes_exercicio_view.dart';
 import 'package:app_projeto/view/exercicios_View.dart';

@@ -25,7 +25,6 @@ class _PerfilViewState extends State<PerfilView> {
 
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(20),
-
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
@@ -101,7 +100,7 @@ class _PerfilViewState extends State<PerfilView> {
 
             const SizedBox(height: 20),
 
-            // Botão de editar
+            // Botão de editar perfil
             SizedBox(
               width: double.infinity,
               child: ElevatedButton.icon(
@@ -121,7 +120,33 @@ class _PerfilViewState extends State<PerfilView> {
               ),
             ),
 
-            // NOVO BOTÃO: SAIR DA CONTA
+            // Novo botão: Sobre o aplicativo
+            const SizedBox(height: 12),
+
+            SizedBox(
+              width: double.infinity,
+              child: OutlinedButton.icon(
+                onPressed: () {
+                  Navigator.pushNamed(context, 'sobre');
+                },
+                icon: const Icon(Icons.info_outline),
+                label: const Text('Sobre'),
+                style: OutlinedButton.styleFrom(
+                  foregroundColor: Colors.blue,
+                  side: const BorderSide(
+                    color: Colors.blue,
+                  ),
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 14,
+                  ),
+                  textStyle: const TextStyle(
+                    fontSize: 16,
+                  ),
+                ),
+              ),
+            ),
+
+            // Botão: Sair da conta
             const SizedBox(height: 12),
 
             SizedBox(
